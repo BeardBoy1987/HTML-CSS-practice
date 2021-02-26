@@ -1,8 +1,32 @@
+html {
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.wrap {
+    max-width: 1400px;
+    padding: 0 110px;
+    margin: 0 auto;
+}
+
+header {
+    box-sizing: border-box;
+}
+
 .header-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
+    width: 347px;
+    height: 47px;
 }
 
 .site-navigation {
@@ -13,6 +37,11 @@ a {
     text-decoration: none;
 }
 
+header a:hover {
+    border-bottom: solid 1px;
+    color: black;
+}
+
 ul a {
     color: black;
     text-transform: uppercase;
@@ -20,13 +49,22 @@ ul a {
 
 .site-navigation-item {
     display: inline-block;
-    margin: 30px;
+    margin: 20px;
     font-size: larger;
 }
 
-.visually-hidden {
-    display: none;
+main {
+    box-sizing: border-box;
 }
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 
 .headline h2 {
     text-align: center;
@@ -35,6 +73,11 @@ ul a {
     left: 0;
     width: 100%;
     font-size: 70px;
+}
+
+.headline a:hover {
+    border-bottom: solid 1px;
+    color: white;
 }
 
 .headline img {
@@ -57,6 +100,16 @@ ul a {
     text-transform: uppercase;
 }
 
+.reviews img {
+    width: 371px;
+    height: 203px;
+}
+
+.reviews a:hover {
+    border-bottom: solid 1px;
+    border-color: black;
+}
+
 .reviews-list {
     margin: 0px;
     padding: 0px;
@@ -76,10 +129,19 @@ ul a {
     font-size: 24px;
 }
 
+.reviews-link-middle {
+    color: orange;
+}
+
 .promo {
+    box-sizing: border-box;
     background-image: radial-gradient(circle, rgb(255, 255, 255) 39%, rgb(198, 211, 214) 96%);
     margin-bottom: 40px;
     padding-top: 60px;
+}
+
+.promo a:hover {
+    color: black;
 }
 
 .promo h2 {
@@ -105,21 +167,25 @@ ul a {
     margin: 50px;
     list-style-type:  none;
 }
-/*Вот сраные стили для сраной кнопки*/
-.promo button {
-   display:block;
+
+.btn {
+   box-sizing: border-box;
+   display: block;
    position: relative;
-   border: 1px solid orange;
+   border: 1px solid rgb(0, 0, 0);
    background: orange;
    color: white;
    font-size: 18px;
    margin: auto;
    width: 150px;
    height: 40px;
+   text-align: center;
+   padding-top: 8px;
 }
 
 
 footer {
+    box-sizing: border-box;
     background-color: rgb(48, 44, 44);
 }
 
@@ -127,25 +193,28 @@ footer a {
 color: white;
 }
 
+.footer-navigation-item a:hover {
+    border-bottom: solid 1px;
+    color: white;
+}
+
 .footer-logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 15px; 
+    padding-top: 15px;
+    width: 281px;
+    height: 38px; 
 }
 
 .footer-navigation {
     text-align: center;
-    border-bottom-style: solid;
-    border-width: 0.5px;
-    border-color: white;
-    margin-left: 12%;
-    margin-right: 12%;
+    
 }
 
 .footer-navigation-item {
     display: inline-block;
-    margin: 30px;
+    margin: 20px;
     font-size: larger;   
 }
 
@@ -154,6 +223,11 @@ color: white;
     margin: 0px;
     padding: 0px;
     text-align: center;
+    border-top-style: solid;
+    border-width: 0.5px;
+    border-color: white;
+    margin-left: 10%;
+    margin-right: 7%;
 }
 
 .social-list-item {
@@ -167,3 +241,4 @@ color: white;
     width: 35px;
     height: 35px;
 }
+

@@ -29,6 +29,11 @@ header {
     height: 47px;
 }
 
+.header-logo:hover {
+    border-bottom: solid 1px;
+    color: black;
+}
+
 .site-navigation {
     text-align: center;
 }
@@ -240,5 +245,10 @@ color: white;
 .social-list img {
     width: 35px;
     height: 35px;
+}
+
+.social-list img:hover {
+    border: solid 1px;
+    color: white;
 }
 

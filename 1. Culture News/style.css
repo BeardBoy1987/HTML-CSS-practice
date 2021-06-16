@@ -120,7 +120,7 @@ main {
     padding: 0px;
     overflow: hidden;
     text-align: center;
-  }
+}
 
 .reviews-item {
     display: inline-block;
@@ -174,18 +174,18 @@ main {
 }
 
 .btn {
-   box-sizing: border-box;
-   display: block;
-   position: relative;
-   border: 1px solid rgb(0, 0, 0);
-   background: orange;
-   color: white;
-   font-size: 18px;
-   margin: auto;
-   width: 150px;
-   height: 40px;
-   text-align: center;
-   padding-top: 8px;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    border: 1px solid rgb(0, 0, 0);
+    background: orange;
+    color: white;
+    font-size: 18px;
+    margin: auto;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    padding-top: 8px;
 }
 
 
